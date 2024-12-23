@@ -10,6 +10,7 @@ export default {
       colors: {
         primary: {
           'cyan': '#2BD0D0',
+          'cyan-hover': '#9AE3E3',
           'dark-violet': '#4B3F6B'
         },
         seconary: {

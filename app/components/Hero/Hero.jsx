@@ -7,7 +7,7 @@ function Hero() {
     return (
         <section className=''>
             <Container>
-                <div className="flex relative pt-36 pb-56">
+                <div className="flex relative pt-36 pb-56 ">
                     <HeroeDescription />
                     <HeroImage />
                 </div>
