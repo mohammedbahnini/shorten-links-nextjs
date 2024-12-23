@@ -9,17 +9,17 @@ export default {
     extend: {
       colors: {
         primary: {
-          'cyan': 'hsl(180, 66%, 49%)',
-          'dark-violet': 'hsl(257, 27%, 26%)'
+          'cyan': '#2BD0D0',
+          'dark-violet': '#4B3F6B'
         },
         seconary: {
           'red': 'hsl(0, 87%, 67%)'
         },
         neutral: {
-          'gray': 'hsl(0, 0%, 75%)',
-          'grayish-violet': 'hsl(257, 7%, 63%)',
-          'very-dark-blue': 'hsl(255, 11%, 22%)',
-          'very-dark-violet': 'hsl(260, 8%, 14%)'
+          'gray': '#EFF1F7',
+          'grayish-violet': '#9E9AA8',
+          'very-dark-blue': '#34313D',
+          'very-dark-violet': '#3A3054'
         }
       },
       fontFamily: {

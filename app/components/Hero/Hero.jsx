@@ -5,7 +5,7 @@ import HeroImage from './HeroImage'
 
 function Hero() {
     return (
-        <section>
+        <section className=''>
             <Container>
                 <div className="flex relative pt-36 pb-56">
                     <HeroeDescription />
