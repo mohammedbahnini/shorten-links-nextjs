@@ -5,7 +5,7 @@ import StatsCardsGroup from './StatsCardsGroup'
 
 function StatsCards() {
     return (
-        <div className=' mt-[100px] relative '>
+        <div className='mt-24 md:mt-[100px] relative '>
             <StatsCardsGroup />
             <StatsCyanLine />
         </div>

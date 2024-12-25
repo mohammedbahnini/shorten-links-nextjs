@@ -5,18 +5,16 @@ import ShortenResult from './ShortenResult'
 import cx from 'classnames';
 import { Oval } from 'react-loader-spinner';
 import shortenLink from '@/app/api/api';
-import CopyToClipboard from 'react-copy-to-clipboard';
-
 
 
 function Shorten() {
     const [hasError, setHasError] = useState(false);
-    const [shortenLinks, setShortenLinks] = useState([{ url: 'https://www.frontendmentor.io', shortenUrl: 'https://rel.ink/k4lKyk' }]);
+    const [shortenLinks, setShortenLinks] = useState([{ url: 'https://www.frontendmentor.io', shortenUrl: 'https://rel.ink/k4lKyk' }, { url: 'https://www.frontendmentor.io', shortenUrl: 'https://rel.ink/k4lKyk' }]);
     const [isInProcess, setIsInProcess] = useState(false);
     const textRef = useRef();
 
     const handleClick = async () => {
-        console.log(textRef.current.value.trim().length);
+
 
         setIsInProcess(true);
         setHasError(false);
@@ -52,23 +50,23 @@ function Shorten() {
 
             <div className='relative'>
                 <Container>
-                    <div className='rounded-xl bg-neutral-very-dark-blue p-6 md:py-14 md:px-16  items-center  bg-[url("/images/bg/bg-shorten-desktop.svg")] bg-cover   '>
+                    <div className='rounded-xl bg-neutral-very-dark-blue p-6 md:py-14 md:px-16  items-center bg-[url("/images/bg/bg-shorten-mobile.svg")]   md:bg-[url("/images/bg/bg-shorten-desktop.svg")] bg-cover  bg-co  '>
 
-                        <div className='flex flex-col md:flex-row  gap-9 md:gap-6  relative' >
+                        <div className='flex flex-col md:flex-row items-end gap-9 md:gap-6  relative' >
 
 
-                            <div className='flex-1  '>
+                            <div className='flex-1 w-full md:w-auto  '>
 
                                 <input type='text' ref={textRef}
-                                    className={cx('bg-white px-8 py-3 font-medium text-xl leading-9 text-neutral-grayish-violet rounded-xl w-full  ', {
-                                        'outline outline-[3px] -outline-offset-[1px] outline-seconary-red': hasError,
+                                    className={cx('bg-white px-4 py-2 md:px-8 md:py-3 font-medium text-xl leading-9  placeholder:text-neutral-grayish-violet text-primary-dark-violet rounded-xl w-full  ', {
+                                        'outline outline-[3px] -outline-offset-[1px] outline-seconary-red placeholder:text-seconary-red/80': hasError,
                                         'outline-none': !hasError
                                     })} placeholder='Shorten a link here ...' />
 
                             </div>
 
                             <button onClick={handleClick}
-                                className='bg-primary-cyan hover:bg-primary-cyan-hover text-white font-bold text-xl cursor-pointer rounded-xl px-10 py-4 outline-none w-full  md:min-w-[180px]  '>{
+                                className='block bg-primary-cyan hover:bg-primary-cyan-hover text-white font-bold text-lg md:text-xl cursor-pointer rounded-xl px-10 py-3 md:py-4 outline-none w-full  md:w-[180px]  '>{
                                     isInProcess ?
                                         <Oval
                                             visible={true}

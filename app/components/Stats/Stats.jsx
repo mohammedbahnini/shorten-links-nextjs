@@ -7,7 +7,7 @@ function Stats() {
     return (
         <section>
             <Container>
-                <div className='mt-10'>
+                <div className='mt-0 md:mt-10'>
                     <StatsTitle />
                     <StatsCards />
                 </div>

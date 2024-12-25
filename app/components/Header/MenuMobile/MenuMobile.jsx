@@ -8,7 +8,7 @@ function MenuMobile() {
 
     return (
         <div className=''>
-            <button className='bg-transparent cursor-pointer outline-none border-none  flex items-center ' onClick={() => setIsOpened(prev => !prev)}  >
+            <button className='bg-transparent cursor-pointer outline-none border-none  flex items-center md:hidden md:invisible ' onClick={() => setIsOpened(prev => !prev)}  >
                 <MdMenu className='text-2xl' />
             </button>
             <Menu isOpened={isOpened} />

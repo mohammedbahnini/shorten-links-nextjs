@@ -2,7 +2,7 @@ import React from 'react'
 
 function StatsCyanLine() {
     return (
-        <div className='h-2 w-full absolute bg-primary-cyan top-1/2 -translate-y-1/2 -z-[0] '></div>
+        <div className='h-full w-2 -translate-x-1/2 left-1/2 md:left-auto md:translate-x-0 md:h-2  md:w-full absolute bg-primary-cyan top-1/2 -translate-y-1/2 -z-[0] '></div>
     )
 }
 
