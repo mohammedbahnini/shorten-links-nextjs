@@ -2,25 +2,9 @@ import Link from 'next/link'
 import React from 'react'
 
 function NavActions() {
-    const actions = [
-        {
-            text: 'Login',
-            isForLogin: false
-        },
-        {
-            text: 'Sign up',
-            isForLogin: true
-        }
-    ]
+
     return (
-        <ul className='flex items-center gap-9'>
-            {/* {actions.map((action, index) => {
-                return (
-                    <li key={index}>
-                        <Link href='/'>{action.text}</Link>
-                    </li>
-                )
-            })} */}
+        <ul className=' items-center gap-9 hidden md:flex'>
             <li>
                 <Link href='/' className='text-neutral-grayish-violet font-bold hover:text-neutral-very-dark-violet'>Login</Link>
             </li>

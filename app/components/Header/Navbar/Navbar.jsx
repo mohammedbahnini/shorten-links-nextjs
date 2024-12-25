@@ -5,14 +5,16 @@ import Link from 'next/link';
 import NavLogo from './NavLogo';
 import NavLinks from './NavLinks';
 import NavActions from './NavActions';
+import MenuMobile from '../MenuMobile/MenuMobile';
 
 function Navbar() {
     return (
         <nav >
-            <div className="flex items-center mt-12 py-2 ">
+            <div className="flex items-center mt-10 md:mt-12 justify-between  md:justify-normal relative  py-0 m:py-2  ">
                 <NavLogo />
                 <NavLinks />
                 <NavActions />
+                <MenuMobile />
             </div>
 
         </nav>

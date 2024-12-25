@@ -5,13 +5,12 @@ import HeroImage from './HeroImage'
 
 function Hero() {
     return (
-        <section className=''>
+        <section className='overflow-x-hidden'>
             <Container>
-                <div className="flex relative pt-36 pb-56 ">
+                <div className="flex relative pt-6  m:pt-36 pb-56  flex-col-reverse md:flex-row gap-8 md:gap-0   ">
                     <HeroeDescription />
                     <HeroImage />
                 </div>
-
             </Container>
         </section>
     )

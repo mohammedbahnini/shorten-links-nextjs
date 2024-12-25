@@ -4,7 +4,7 @@ import React from 'react'
 
 function NavLinks() {
     return (
-        <ul className='flex-grow flex items-center gap-7 ml-11'>
+        <ul className='flex-grow  items-center gap-7 ml-11 hidden md:flex'>
             {links.map((link, index) => {
                 return (
                     <li key={index}>

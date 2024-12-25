@@ -52,9 +52,12 @@ function Shorten() {
 
             <div className='relative'>
                 <Container>
-                    <div className='rounded-xl bg-neutral-very-dark-blue py-14 px-16  items-center  bg-[url("/images/bg/bg-shorten-desktop.svg")] bg-cover   '>
-                        <div className='flex gap-6 relative' >
-                            <div className='flex-1 '>
+                    <div className='rounded-xl bg-neutral-very-dark-blue p-6 md:py-14 md:px-16  items-center  bg-[url("/images/bg/bg-shorten-desktop.svg")] bg-cover   '>
+
+                        <div className='flex flex-col md:flex-row  gap-9 md:gap-6  relative' >
+
+
+                            <div className='flex-1  '>
 
                                 <input type='text' ref={textRef}
                                     className={cx('bg-white px-8 py-3 font-medium text-xl leading-9 text-neutral-grayish-violet rounded-xl w-full  ', {
@@ -65,7 +68,7 @@ function Shorten() {
                             </div>
 
                             <button onClick={handleClick}
-                                className='bg-primary-cyan hover:bg-primary-cyan-hover text-white font-bold text-xl cursor-pointer rounded-xl px-10 py-4 outline-none min-w-[180px] '>{
+                                className='bg-primary-cyan hover:bg-primary-cyan-hover text-white font-bold text-xl cursor-pointer rounded-xl px-10 py-4 outline-none w-full  md:min-w-[180px]  '>{
                                     isInProcess ?
                                         <Oval
                                             visible={true}
@@ -81,7 +84,7 @@ function Shorten() {
                                 }
                             </button>
 
-                            <span className={cx('absolute text-seconary-red -bottom-8 italic font-medium text-base ', { 'visible inline': true, 'hidden invisible': !hasError })}>Please add a link</span>
+                            <span className={cx('absolute text-seconary-red top-16  md:-bottom-8 italic font-medium text-bas left-0 ', { 'visible inline': true, 'hidden invisible': !hasError })}>Please add a link</span>
                         </div>
 
                     </div>
